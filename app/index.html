@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+
+  <link rel="stylesheet" href="js/mobile-angular-ui/css/mobile-angular-ui-base.min.css">
+  <link rel="stylesheet" href="js/mobile-angular-ui/css/mobile-angular-ui-desktop.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.ios.default.css" />
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.android.holo-dark.css" />
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.win8.black.css" />
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.tizen.black.css" />
+  <link rel="stylesheet" type="text/css" href="css/dx/dx.generic.light.css" />
+  <link rel="stylesheet" href="css/app.css?v6"/>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css" />
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="js/dx/globalize.min.js"></script>
+  <script src="js/dx/dx.phonejs.js"></script>
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
+</head>
+<body class="dx-viewport dx-ios-stripes">
+  <!-- Sidebars -->
+  <div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar" data-ng-swipe-left="toggle('mainSidebar')">
+    <h1 class="app-name">My App</h1>
+    <div class="scrollable">
+      <div class="scrollable-content">
+        <div class="list-group" toggle="off" bubble target="mainSidebar">
+          <a class="list-group-item" href="#/">Home <i class="fa fa-chevron-right pull-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="app">
+
+    <!-- Navbars -->
+    <div class="navbar navbar-app navbar-absolute-top">
+        <div class="pull-left lay-top-menu-avatar">
+            <img class="img-responsive img-rounded" alt="140x140" src="http://iconizer.net/files/Rabbits/orig/rabbit_animal_pink_smile.png">
+        </div>
+        <div class="pull-left lh-50 ml-5 top-menu-player-name">
+          Эльдар Амантай
+        </div>
+        <div class="pull-left lh-50 ml-5">
+          <img src="http://xn--p1af1b.xn--p1ai/uryaimg/da2659d2571a04b01d297dec77ceb3be.png" style="max-height:30px;">
+          <span class="top-menu-base-money">
+            5&nbsp;
+          </span>
+          <span class="money-color">
+            +5
+          </span>
+        </div>
+        <div class="pull-right">
+          <a class="btn btn-default" data-ng-click="toggle('mainSidebar');">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
+
+    <div class="navbar navbar-app navbar-absolute-bottom">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 lay-bottom-menu-btn">
+              <a href class="">
+                <i class="fa fa-tasks"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 lay-bottom-menu-btn">
+              <a href class="">
+                <i class="fa fa-users"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 lay-bottom-menu-btn">
+              <a href class="">
+                <i class="fa fa-folder-open"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 lay-bottom-menu-btn">
+              <a href class=" completeStepArrow">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="app-body">
+        <div ng-view class="app-content"></div>
+  </div>
+  </div>
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="js/mobile-angular-ui/js/mobile-angular-ui.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+
+  <script>
+      DevExpress.devices.attachCss($(".dx-viewport"));
+  </script>
+
+</body>
+</html>
